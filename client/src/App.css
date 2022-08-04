@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --figure-color: rgb(69, 221, 9);
+}
+header {
+  background-color: rgb(69, 221, 9);
+  text-align: center;
+}
+header img {
+  max-width: 300px;
+}
+
+nav {
+  background-color: black;
+  padding-top: 30px;
+}
+li {
+  display: inline-block;
+  margin: 0px 7px;
+  cursor: pointer;
+  padding: 15px 27px;
+  color: white;
+}
+li.active {
+  background-color: #83c676;
+}
+.overview,
+.traffic,
+.performance {
+  display: flex;
+}
+#traffic-tab,
+#performance-tab {
+  display: none;
+}
+.card {
+  border: 1px solid #d3d3d3;
+  width: 380px;
+  margin: 25px 25px;
+}
+.card h3 {
+  background-color: #83c676;
+  color: white;
+  padding: 3px 8px;
+}
+.card .figures {
+  font-size: xx-large;
+  padding: 4px 5px;
+}
+.card .perf {
+  font-size: x-small;
+  text-align: right;
+  padding: 4px 5px;
+  color: #aca7a7;
+}
+.card .wow {
+  color: var(--figure-color);
+  padding-left: 4px;
+}
+
+.figures {
+  display: flex;
+}
+
+.percentile {
+  display: flex;
+  max-width: 35%;
+  padding-left: 10px;
+}
+.percentile span {
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.negative {
+  color: red;
+}
+.positive {
+  color: #83c676;
+}
+
+.tabContent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
